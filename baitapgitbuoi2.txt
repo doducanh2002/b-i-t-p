@@ -1,0 +1,34 @@
+1.git branch
+Branch là dùng để phân nhánh và branch đã phân nhánh sẽ không ảnh hưởng đến branch khác nên có thể tiến hành nhiều thay 
+đổi đồng thời trong cùng 1 repository. 
+git branch<tên branch> : Tạo branch
+ git branch : Liệt kê branch ở local
+ git branch -r : Liệt kê branch trên git server
+ git branch -a : Liệt kê toàn bộ branch
+2. git checkout, git switch
+cả 2 dùng để chuyển nhánh 
+git check out còn dùng để phục hồi file trong thư mục làm việc từ  1 commit trước đây
+git switch thì it phổ biến hơn
+Giả sử đang ở nhánh nào đó, muốn chuyển sang nhánh master thì thực hiện lệnh:
+git checkout master
+Lúc này nhánh master hoạt động, và thư mục làm việc là các file tương ứng với nhánh này
+3.Pull request/Merge request
+Pull Request (viết tắt là PR) là chức năng cho phép bạn nói với người khác về các thay đổi bạn đã đẩy lên kho Github 
+(Github repository) của người sở hữu code đó (chủ repository). 
+git 
+4.git fetch
+
+Lệnh git fetch tải về dữ liệu từ Remote Repo (các dữ liệu như các commit, các file, refs), dữ liệu tải về để bạn theo dõi 
+sự thay đổi của remote, tuy nhiên tải về bằng git fetch nó chưa tích hợp thay đổi ngay local repository của bạn, mục đích
+ để theo dõi các commit người khác đã cập nhật lên server, để có được thông thông tin khác nhau giữa remote và local
+5. Git merge
+Kết hợp sự thay đổi của các commit kể từ lúc tách nhánh của nhánh hiện tại vào nhánh tách ra trước đó git merge destination_branch_name
+ destination_branh_name: là tên nhánh bạn muốn merge vào nhánh hiện tại
+6. Git pull
+Git Pull là một lệnh dùng để tải xuống dữ liệu từ một Remote repository và cập nhật Local repository phù hợp với dữ liệu đó. Nói cách khác, Git
+ Pull là lệnh hợp nhất các thay đổi từ Remote repository vào Local repository.
+Về bản chất, Git Pull chính là sự kết hợp của 2 lệnh Git Fetch và Git Merge. Giai đoạn đầu, Git Pull sẽ thực thi lệnh Git Fetch ở phạm vi nhánh 
+cục bộ mà HEAD được trỏ đến. Khi dữ liệu được tải xuống, Git Pull sẽ bắt đầu quy trình hợp nhất như Git Merge. Một merge commit mới sẽ được tạo 
+và HEAD cũng được cập nhật để trỏ đến merge commit đó.
+Git pull = git fetch + git merge 
+Git pull destination_branch_name (destination_branh_name: là tên nhánh bạn muốn merge vào nhánh hiện tại)
