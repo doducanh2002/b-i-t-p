@@ -25,4 +25,5 @@ sự thay đổi của remote, tuy nhiên tải về bằng git fetch nó chưa 
 Kết hợp sự thay đổi của các commit kể từ lúc tách nhánh của nhánh hiện tại vào nhánh tách ra trước đó git merge destination_branch_name
  destination_branh_name: là tên nhánh bạn muốn merge vào nhánh hiện tại
 6. Git pull
-Git pull = git fetch + merge git pull destination_branch_name destination_branh_name: là tên nhánh bạn muốn merge vào nhánh hiện tạ
+Git pull = git fetch + merge 
+git pull destination_branch_name (destination_branh_name: là tên nhánh bạn muốn merge vào nhánh hiện tại)
