@@ -25,5 +25,10 @@ sự thay đổi của remote, tuy nhiên tải về bằng git fetch nó chưa 
 Kết hợp sự thay đổi của các commit kể từ lúc tách nhánh của nhánh hiện tại vào nhánh tách ra trước đó git merge destination_branch_name
  destination_branh_name: là tên nhánh bạn muốn merge vào nhánh hiện tại
 6. Git pull
-Git pull = git fetch + merge 
-git pull destination_branch_name (destination_branh_name: là tên nhánh bạn muốn merge vào nhánh hiện tại)
+Git Pull là một lệnh dùng để tải xuống dữ liệu từ một Remote repository và cập nhật Local repository phù hợp với dữ liệu đó. Nói cách khác, Git
+ Pull là lệnh hợp nhất các thay đổi từ Remote repository vào Local repository.
+Về bản chất, Git Pull chính là sự kết hợp của 2 lệnh Git Fetch và Git Merge. Giai đoạn đầu, Git Pull sẽ thực thi lệnh Git Fetch ở phạm vi nhánh 
+cục bộ mà HEAD được trỏ đến. Khi dữ liệu được tải xuống, Git Pull sẽ bắt đầu quy trình hợp nhất như Git Merge. Một merge commit mới sẽ được tạo 
+và HEAD cũng được cập nhật để trỏ đến merge commit đó.
+Git pull = git fetch + git merge 
+Git pull destination_branch_name (destination_branh_name: là tên nhánh bạn muốn merge vào nhánh hiện tại)
