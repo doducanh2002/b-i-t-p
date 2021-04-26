@@ -36,4 +36,4 @@ Git pull destination_branch_name (destination_branh_name: là tên nhánh bạn 
 
 Nhận xét: 
 - git switch còn có thể tạo nhánh mới bằng lệnh git switch -c < tên nhánh >
-- các phần còn lại a thấy e làm ok rồi đó
+- các phần còn lại a thấy e làm ok rồi đó.
