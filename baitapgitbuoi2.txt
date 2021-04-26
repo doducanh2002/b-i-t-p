@@ -32,3 +32,8 @@ cục bộ mà HEAD được trỏ đến. Khi dữ liệu được tải xuốn
 và HEAD cũng được cập nhật để trỏ đến merge commit đó.
 Git pull = git fetch + git merge 
 Git pull destination_branch_name (destination_branh_name: là tên nhánh bạn muốn merge vào nhánh hiện tại)
+
+
+Nhận xét: 
+- git switch còn có thể tạo nhánh mới bằng lệnh git switch -c < tên nhánh >
+- các phần còn lại a thấy e làm ok rồi đó
