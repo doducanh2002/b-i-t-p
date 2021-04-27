@@ -28,3 +28,6 @@ một git merge được thực thi để hợp nhất các remote content
 Thi hành lệnh: git pull destination_branch_name
 destination_branch_name là tên nhánh mà bạn muốn merge vào nhánh hiện tại
 
+Nhận xét : Phần 6 Git pull= git fetch + git merge
+các phần còn lại em không có nhận xét gì
+
